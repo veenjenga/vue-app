@@ -1,7 +1,6 @@
-import { createApp } from 'vue'//impeort the root component app from a single file component
-import './style.css'
-import App from './App.vue'
-import './index.css'
+import { createApp } from 'vue'
+   import App from './App.vue'
+   import router from './router'
+   import './assets/main.css'
 
-
-createApp(App).mount('#app')// This is where the Vue app will be mounted
+   createApp(App).use(router).mount('#app')
